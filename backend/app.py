@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # ---------------- MongoDB Setup ----------------
-MONGO_URI = os.environ.get("MONGO_URI") or "mongodb+srv://singj93_db_user:qA68loPdRPsRAPmo@cluster0.nlwncx7.mongodb.net/mathninja?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = os.environ.get("MONGO_URI")
 client = MongoClient(MONGO_URI)
 db = client['math_fruit_ninja']  # Database
 users_collection = db['users']   # Collection for users
