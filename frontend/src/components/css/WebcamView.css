@@ -1,0 +1,77 @@
+.webcam-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.webcam-container.light {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.webcam-container.dark {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.webcam-view {
+  position: relative;
+}
+
+.webcam-video {
+  display: block;
+  border-radius: 12px;
+  background: #000;
+  width: 240px;
+  height: 180px;
+}
+
+.webcam-controls {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.btn-sm.light {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.btn-sm.light:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.btn-sm.dark {
+  background: rgba(45, 45, 45, 0.9);
+  color: #fff;
+}
+
+.btn-sm.dark:hover {
+  background: rgba(45, 45, 45, 1);
+}
+
+.btn-sm.btn-primary {
+  background: #007AFF !important;
+  color: white !important;
+}
+
+.btn-sm.btn-primary:hover {
+  background: #0056CC !important;
+}

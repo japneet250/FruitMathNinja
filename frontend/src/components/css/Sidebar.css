@@ -1,0 +1,162 @@
+.sidebar {
+  width: 280px;
+  border-right: 1px solid;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.sidebar.light {
+  background: #f9f9f9;
+  border-color: #e5e5e5;
+}
+
+.sidebar.dark {
+  background: #252525;
+  border-color: #404040;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid;
+}
+
+.sidebar-header.light {
+  border-color: #e5e5e5;
+}
+
+.sidebar-header.dark {
+  border-color: #404040;
+}
+
+.sidebar-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.btn-new {
+  background: #007AFF !important;
+  color: white !important;
+  font-size: 1.25rem;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.btn-new:hover {
+  background: #0056CC !important;
+  transform: translateY(-1px);
+}
+
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sidebar-empty {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.sidebar-empty p {
+  margin: 0;
+}
+
+.sidebar-empty-hint {
+  font-size: 0.875rem;
+  opacity: 0.6;
+  margin-top: 8px;
+}
+
+.notes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.note-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+.note-item.light {
+  border-color: #e5e5e5;
+}
+
+.note-item.dark {
+  border-color: #404040;
+}
+
+.note-button {
+  flex: 1;
+  background: transparent;
+  border: none;
+  text-align: left;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  color: inherit;
+  font-family: inherit;
+}
+
+.note-button.light:hover {
+  background: #f0f0f0;
+}
+
+.note-button.dark:hover {
+  background: #333;
+}
+
+.note-button.active.light {
+  background: #007AFF;
+  color: white;
+}
+
+.note-button.active.dark {
+  background: #007AFF;
+  color: white;
+}
+
+.note-title {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.note-meta {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.btn-delete {
+  padding: 8px !important;
+  margin: 0 8px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  width: 24px !important;
+  height: 24px !important;
+  font-size: 1.2rem;
+  border-radius: 4px !important;
+}
+
+.btn-delete.light {
+  background: #ff4444;
+  color: white;
+}
+
+.btn-delete.dark {
+  background: #ff4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #cc0000 !important;
+}
+
+.note-item:hover .btn-delete {
+  opacity: 1;
+}
